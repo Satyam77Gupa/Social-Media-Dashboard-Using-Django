@@ -30,9 +30,9 @@ SOCIAL MEDIA DASHBOARD USING DJANGO 📌 PROBLEM STATEMENT Social media users st
 
 📜 CONCLUSION The Social Media Dashboard using Django provides a centralized, efficient, and user-friendly way to manage social media activities. By integrating authentication, interaction, analytics, and scheduling, this project offers a comprehensive solution for users who need better control over their digital presence.
 
-📎 AUTHOR Satyam Gupta.
+📎 AUTHOR :  Satyam Gupta.
 
-STEP BY TSEP INSTRUCTION TO RUN THE CODE TO SEE OUTPUT.
+# STEP BY STEP INSTRUCTION TO RUN THE CODE TO SEE OUTPUT.
 
 I inspected the zip you uploaded. Quick summary first (so you can copy-paste exact commands):
 
@@ -46,7 +46,7 @@ Below are step-by-step terminal commands you can run. I give both Mac / Linux an
 
 -- Steps to run the project locally
 
-1) Unzip and go to project folder
+# 1) Unzip and go to project folder
 Mac / Linux [Copy & Paste to Terminal]
 from the folder where the zip is located
 unzip "1. Social-Media-Dashboard-Django-main.zip" cd "Social-Media-Dashboard-Django-main" ls -la
@@ -56,28 +56,32 @@ from the folder where the zip is located
 Expand-Archive -LiteralPath "1. Social-Media-Dashboard-Django-main.zip" -DestinationPath "Social-Media-Dashboard-Django-main" Set-Location .\Social-Media-Dashboard-Django-main
 Get-ChildItem (You should now see manage.py in the directory.)
 
-2) Create & activate a virtual environment
-Mac / Linux [Copy & Paste to Cmd Or VScode Terminal]
+# 2) Create & activate a virtual environment
+
+- Mac / Linux [Copy & Paste to Cmd Or VScode Terminal]
 python3 -m venv venv source venv/bin/activate python -V # verify Python version pip install --upgrade pip setuptools wheel
 
-Windows (PowerShell) [Copy & Paste to MS Powershell & VScode Terminal]
+- Windows (PowerShell) [Copy & Paste to MS Powershell & VScode Terminal]
 py -3 -m venv venv .\venv\Scripts\Activate python -V # verify Python version pip install --upgrade pip setuptools wheel
 
-3) Install Python dependencies
+# 3) Install Python dependencies
 Copy & Paste to VScode Terminal but having in these folder
 pip install -r requirements.txt (This will install Django and other libs listed in requirements.txt.)
 
-4) Apply database migrations
+# 4) Apply database migrations
 Copy & Paste to VScode Terminal
 python manage.py migrate
 
-5) (Optional) Create an admin user
-Copy Or Paste to VScode Terminal.
+# 5) (Optional) Create an admin user
+
+- Copy Or Paste to VScode Terminal.
 python manage.py createsuperuser
 
 follow prompts to set username/email/password
-6) Run the development server
--- Copy Or Paste to VScode Terminal.
+
+# 6) Run the development server
+
+- Copy Or Paste to VScode Terminal.
 
 python manage.py runserver
 
@@ -87,30 +91,36 @@ http://127.0.0.1:8000/ If you need to bind to all interfaces (e.g. to view from 
 Copy Or Paste to VScode Terminal.
 python manage.py runserver 0.0.0.0:8000
 
-Quick troubleshooting tips
-"No module named django" → make sure the virtualenv is activated and pip install -r requirements.txt succeeded.
+# Quick troubleshooting tips
+
+- "No module named django" → make sure the virtualenv is activated and pip install -r requirements.txt succeeded.
 If pip install errors on packages like cryptography:
 First run pip install --upgrade pip setuptools wheel.
 
-On Debian/Ubuntu you may need: sudo apt-get install build-essential libssl-dev libffi-dev python3-dev (and sometimes cargo for recent cryptography builds).
+- On Debian/Ubuntu you may need: sudo apt-get install build-essential libssl-dev libffi-dev python3-dev (and sometimes cargo for recent cryptography builds).
 
-If manage.py not found → double-check you're in the Social-Media-Dashboard-Django-main folder (the file we found is at Social-Media-Dashboard-Django-main/manage.py).
+- If manage.py not found → double-check you're in the Social-Media-Dashboard-Django-main folder (the file we found is at Social-Media-Dashboard-Django-main/manage.py).
 
-Env vars: the project reads DJANGO_SECRET_KEY, DJANGO_DEBUG, DJANGO_ALLOWED_HOSTS but has defaults. To set them:
-Linux/mac:
-Copy Or Paste to Terminal.
+- Env vars: the project reads DJANGO_SECRET_KEY, DJANGO_DEBUG, DJANGO_ALLOWED_HOSTS but has defaults. To set them:
+
+# Linux/mac:
+
+- Copy Or Paste to Terminal.
 export DJANGO_SECRET_KEY='mysecret' export DJANGO_DEBUG='False' export DJANGO_ALLOWED_HOSTS='localhost,127.0.0.1' Windows PowerShell:
 
-Powershell
-Copy Or Paste to PowerShell Terminal.
+# Powershell
+
+- Copy Or Paste to PowerShell Terminal.
 $env:DJANGO_SECRET_KEY='mysecret' $env:DJANGO_DEBUG='False' $env:DJANGO_ALLOWED_HOSTS='localhost,127.0.0.1'
 
-One-line “run” summary (Mac/Linux)
-Copy & Paste to Terminal
+# One-line “run” summary (Mac/Linux)
+
+- Copy & Paste to Terminal
 unzip "1. Social-Media-Dashboard-Django-main.zip" && cd "Social-Media-Dashboard-Django-main" && python3 -m venv venv && source venv/bin/activate && pip install --upgrade pip setuptools wheel && pip install -r requirements.txt && python manage.py migrate && python manage.py runserver
 
-One-line “run” summary (Windows PowerShell)
-Copy Or Paste to Powershell Terminal.
+# One-line “run” summary (Windows PowerShell)
+
+-Copy Or Paste to Powershell Terminal.
 Expand-Archive -LiteralPath "1. Social-Media-Dashboard-Django-main.zip" -DestinationPath "Social-Media-Dashboard-Django-main"; Set-Location .\Social-Media-Dashboard-Django-main; py -3 -m venv venv; .\venv\Scripts\Activate; pip install --upgrade pip setuptools wheel; pip install -r requirements.txt; python manage.py migrate; python manage.py runserver
 
 🚀 Happy Coding! 😊
